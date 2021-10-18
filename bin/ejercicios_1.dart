@@ -49,98 +49,114 @@ void main(List<String> arguments) {
 }
 
 void primerejercicio() {
-//  print("Introduzca x2");
- // var a = double.parse(stdin.readLineSync() ?? "");
- // print("Introduzca x");
- // var b = double.parse(stdin.readLineSync() ?? "");
- // print("Introduzca c");
- // var c = double.parse(stdin.readLineSync() ?? "");
- // var x1 = ((-b - sqrt((b * b) - (4 * a * c))) / 2 * a);
-  // var x2 = ((-b + sqrt((b * b) - (4 * a * c))) / 2 * a);
-  // print("x1 = $x1");
-   // print("x2 = $x2");
 
+  print("Dado la F(x) = ax^2 + bx + c ejecute la aplicación: ");
+  var a=1;
+  var b=20;
+  var c=3;
+  print("Espere un momento calculando la ecuación de segundo grado...");
 
+  var x1 =(-b - sqrt((b*b)-(4*a*c)))/(2*a);
+  var x2 =(-b + sqrt((b*b)-(4*a*c)))/(2*a);
 
+  print("Respuesta de la Ecuación negativa es: $x1 ");
+  print("Respuesta de la Ecuación positiva es: $x2");
+  
 }
 
 void segundoejercicio() {
-  print("Coloque sus horas totales");
+  print("Ejercicio N° 2");
+  print("Ingresa la cantidad de sus horas totales");
   var totalHoras = int.parse(stdin.readLineSync() ?? "");
   var s = totalHoras / (24 * 7);
   var d = totalHoras % (24 * 7) / 24;
   var h = totalHoras % 24;
-  print("El total de $totalHoras  horas");
-  print("$s semanas");
-  print("$d días");
-  print("$h horas");
+  print("El total de $totalHoras horas comprende: ");
+  print("SEMANAS: $s");
+  print("DIAS: $d");
+  print("HORAS: $h");
 }
 
+
+
+
+
+
+
+
 void tercerejercicio() {
-  print("Bienvenido");
-  print("Coloque la primera nota");
+  print("Bienvenido al Registro de Nota de Quimica");
+  print("Registre la primera nota:");
   var a = int.parse(stdin.readLineSync() ?? "");
-  print("Coloque la segunda nota");
+  print("Registre la segunda nota:");
   var b = int.parse(stdin.readLineSync() ?? "");
-  print("Coloque la tercera nota");
+  print("Registre la tercera nota:");
   var c = int.parse(stdin.readLineSync() ?? "");
   var media = (a + b + c) / 3;
   var mediapuntito = ((a + b + c) / 3) + 1;
-  print("la media es $media");
-  print("Como los alumnos hicieron su tarea, un puntito ps $mediapuntito");
+  print("La media del Trimestre es: $media");
+  print("Como el alumno realizó su trabajo, + 1 punto ganado");
+  print("Media Total del Trimentre: $mediapuntito");
 }
 
 void cuartoejercicio() {
-  print("Defina su pago por hora : ");
+  print("Ejercicio 4");
+  print("Registre su pago por hora: ");
   var horas = int.parse(stdin.readLineSync() ?? "");
-  print("Defina las horas trabajadas de su personal : ");
+  print("Registre las horas trabajadas de su personal: ");
   var horast = int.parse(stdin.readLineSync() ?? "");
   var resultado = horast * horas;
-
-  print("Pago total : $resultado");
+  print("PAGO TOTAL : S/. $resultado.00");
 }
 
+
+
+
 void quintoejercicio() {
-  print("Coloque su número  : ");
-  var numero = int.parse(stdin.readLineSync() ?? "");
-  var potencia = pow(numero, 2);
-  var cubo = pow(numero, 3);
-  var quin = pow(numero, 5);
-  print("la potencia de $numero es $potencia");
-  print("el cubo de $numero es $cubo");
-  print("el quítunple de $numero es $quin");
+  print("Ejercicio 5");
+  print("Ingresa su número: ");
+  var num = int.parse(stdin.readLineSync() ?? "");
+  var potencia = pow(num, 2);
+  var cubo = pow(num, 3);
+  var quintuple = pow(num, 5);
+  print("La Potencia de: $num es: -> $potencia");
+  print("El Cubo de: $num es: -> $cubo");
+  print("El Quíntuple de: $num es: -> $quintuple");
+
 }
 
 void sextoejercicio() {
-  print("Coloque su número  : ");
-  var numero = double.parse(stdin.readLineSync() ?? "");
-  print("Coloque su otro número  : ");
-  var numero2 = double.parse(stdin.readLineSync() ?? "");
-  var result = (numero2 == 0)
+  print("Ejercicio 6");
+  print("Ingresa un número a dividir: ");
+  var num = double.parse(stdin.readLineSync() ?? "");
+  print("Ingrese el otro número: ");
+  var nume2 = double.parse(stdin.readLineSync() ?? "");
+  var result = (nume2 == 0)
       ? "No se puede dividir entre dos,  tu tas lokazo"
-      : numero / numero2;
+      : num / nume2;
   print("resultado $result");
 }
 
+
 void septimoejercicio() {
-  print("Introduzca su velocidad en m/s : ");
-  var v = double.parse(stdin.readLineSync() ?? "");
+  print("Ejercicio 7");
+  print("Introduzca la velocidad: ");
+  var velocidad = double.parse(stdin.readLineSync() ?? "");
   print("Introduzca el tiempo en segundos : ");
-  var t = double.parse(stdin.readLineSync() ?? "");
-  var d = v * t;
-  print("la distancia recorrida es  $d metros");
+  var tiempo = double.parse(stdin.readLineSync() ?? "");
+  var d= velocidad * tiempo;
+  print("la distancia recorrida es:  $d metros");
+
 }
 
 void octavoejercicio() {
+  print("Ejercicio 8");
   var rng = new Random();
   var s = 0;
   var correctas = 3;
   var incorrectas = -1;
   var blanco = 0;
-  var resultado = 0;
-  var resultado2 = 0;
-  var resultado3 = 0;
-  var finalresultado = 0;
+  var resultado = 0;  var resultado2 = 0;  var resultado3 = 0; var finalresultado = 0;
   for (var i = 0; i < 3; i++) {
     var myrandom = (rng.nextInt(10));
     s += myrandom;
@@ -148,19 +164,15 @@ void octavoejercicio() {
       print("respuesta correctas $myrandom");
       resultado = myrandom * correctas;
       print("Puntaje : $resultado");
-    } else if (i == 1) {
-      print("respuesta incorrectas $myrandom");
+    } else if (i == 1) { print("respuesta incorrectas $myrandom");
       resultado2 = incorrectas * myrandom;
       print("Puntaje fallido : $resultado2");
-    } else if (i == 2) {
-      resultado3 = blanco;
+    } else if (i == 2) { resultado3 = blanco;
       print("respuesta en blanco $myrandom");
-      print("Puntaje blanco : $resultado3");
-    }
+      print("Puntaje blanco : $resultado3"); }
     finalresultado = resultado + resultado2 + resultado3;
     if (finalresultado < 0) {
-      finalresultado = 0;
-    }
+      finalresultado = 0; }
   }
   print("Total de respuestas $s");
   print("Nota final $finalresultado");
