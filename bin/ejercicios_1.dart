@@ -19,28 +19,28 @@ void main(List<String> arguments) {
   do {
     switch (numero) {
       case 1:
-        primerejercicio();
+        ejerciciouno();
         break;
       case 2:
-        segundoejercicio();
+        ejerciciodos();
         break;
       case 3:
-        tercerejercicio();
+        ejerciciotres();
         break;
       case 4:
-        cuartoejercicio();
+        ejerciciocuatro();
         break;
       case 5:
-        quintoejercicio();
+        ejerciciocinco();
         break;
       case 6:
-        sextoejercicio();
+        ejercicioseis();
         break;
       case 7:
-        septimoejercicio();
+        ejerciciosiete();
         break;
       case 8:
-        octavoejercicio();
+        ejerciciOcho();
         break;
       default:
     }
@@ -48,7 +48,7 @@ void main(List<String> arguments) {
 
 }
 
-void primerejercicio() {
+void ejerciciouno() {
 
   print("Dado la F(x) = ax^2 + bx + c ejecute la aplicación: ");
   var a=1;
@@ -61,10 +61,9 @@ void primerejercicio() {
 
   print("Respuesta de la Ecuación negativa es: $x1 ");
   print("Respuesta de la Ecuación positiva es: $x2");
-  
 }
 
-void segundoejercicio() {
+void ejerciciodos() {
   print("Ejercicio N° 2");
   print("Ingresa la cantidad de sus horas totales");
   var totalHoras = int.parse(stdin.readLineSync() ?? "");
@@ -77,14 +76,7 @@ void segundoejercicio() {
   print("HORAS: $h");
 }
 
-
-
-
-
-
-
-
-void tercerejercicio() {
+void ejerciciotres() {
   print("Bienvenido al Registro de Nota de Quimica");
   print("Registre la primera nota:");
   var a = int.parse(stdin.readLineSync() ?? "");
@@ -99,7 +91,7 @@ void tercerejercicio() {
   print("Media Total del Trimentre: $mediapuntito");
 }
 
-void cuartoejercicio() {
+void ejerciciocuatro() {
   print("Ejercicio 4");
   print("Registre su pago por hora: ");
   var horas = int.parse(stdin.readLineSync() ?? "");
@@ -109,10 +101,7 @@ void cuartoejercicio() {
   print("PAGO TOTAL : S/. $resultado.00");
 }
 
-
-
-
-void quintoejercicio() {
+void ejerciciocinco() {
   print("Ejercicio 5");
   print("Ingresa su número: ");
   var num = int.parse(stdin.readLineSync() ?? "");
@@ -125,7 +114,7 @@ void quintoejercicio() {
 
 }
 
-void sextoejercicio() {
+void ejercicioseis() {
   print("Ejercicio 6");
   print("Ingresa un número a dividir: ");
   var num = double.parse(stdin.readLineSync() ?? "");
@@ -137,8 +126,7 @@ void sextoejercicio() {
   print("resultado $result");
 }
 
-
-void septimoejercicio() {
+void ejerciciosiete() {
   print("Ejercicio 7");
   print("Introduzca la velocidad: ");
   var velocidad = double.parse(stdin.readLineSync() ?? "");
@@ -146,10 +134,9 @@ void septimoejercicio() {
   var tiempo = double.parse(stdin.readLineSync() ?? "");
   var d= velocidad * tiempo;
   print("la distancia recorrida es:  $d metros");
-
 }
 
-void octavoejercicio() {
+void ejerciciOcho() {
   print("Ejercicio 8");
   var rng = new Random();
   var s = 0;
